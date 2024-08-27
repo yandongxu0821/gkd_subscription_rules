@@ -5,9 +5,9 @@ import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
   id: 126958963,
-  name: 'Subscription',
+  name: 'Subscription of Signal APPs',
   version: 1.0,
-  author: 'author',
+  author: 'yandongxu0821',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/yandongxu0821/gkd_subscription_rules',
   categories,
