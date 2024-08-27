@@ -24,7 +24,7 @@ export default defineGkdApp({
       rules: [
         {
           matches: ['@ImageView[id="com.estrongs.android.pop:id/iv_close"]'],
-          quickFind: true,
+          fastQuery: true,
           activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
         },
       ],
@@ -38,7 +38,7 @@ export default defineGkdApp({
           matches: [
             '@FrameLayout -2 FrameLayout < FrameLayout - FrameLayout <<3 [id="android:id/content"]',
           ],
-          quickFind: true,
+          fastQuery: true,
           activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
         },
       ],
@@ -52,7 +52,7 @@ export default defineGkdApp({
           matches: [
             '@FrameLayout -2 ImageView < FrameLayout - FrameLayout <<3 [id="android:id/content"]',
           ],
-          quickFind: true,
+          fastQuery: true,
           activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
         },
       ],
@@ -81,7 +81,7 @@ export default defineGkdApp({
           matches: [
             'ImageView < @ViewGroup < ViewGroup - ViewGroup - View - ImageView - ImageView - ViewGroup - ImageView - ViewGroup <<7 FrameLayout - FrameLayout <<4 [id="android:id/content"]',
           ],
-          quickFind: true,
+          fastQuery: true,
           activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
         },
       ],
