@@ -34,5 +34,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '随机广告（高占用）',
+      desc: '关闭（可能占用较多资源）',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '@View <<2 View -2 View <<2 View - TextView <<4 FrameLayout -3 FrameLayout <<4 FrameLayout -2 FrameLayout <<3 [id="android:id/content"]',
+        },
+      ],
+    },
   ],
 });
