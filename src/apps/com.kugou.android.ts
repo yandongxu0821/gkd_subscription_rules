@@ -18,5 +18,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '未识别的开屏广告',
+      desc: '跳过，主订阅的漏网之鱼',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.splash.SplashActivity',
+          matches: '@View[desc="跳过"] -3 View <<2 [id="android:id/content"]',
+        },
+      ],
+    },
   ],
 });

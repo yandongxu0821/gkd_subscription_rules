@@ -86,5 +86,45 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      name: '主页广告5',
+      key: 5,
+      desc: '关闭',
+      rules: [
+        {
+          matches: ['@FrameLayout - ImageView <<4 [id="android:id/content"]'],
+          fastQuery: true,
+          activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '主页广告6',
+      desc: '关闭（节点不支持直接点击可能需要模拟点击权限）',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches:
+            'ImageView - @FrameLayout - ImageView <<4 [id="android:id/content"]',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '主页广告7',
+      desc: '关闭（节点不支持直接点击可能需要模拟点击权限）',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches:
+            'ImageView < @FrameLayout - FrameLayout <<5 [id="android:id/content"]',
+        },
+      ],
+    },
   ],
 });
+
+// TODO: key=7 处规则可合并为全局规则, fix ID: 0x01
