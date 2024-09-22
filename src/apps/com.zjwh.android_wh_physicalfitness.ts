@@ -32,7 +32,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '开屏后的摇一摇广告0',
+      name: '摇一摇广告0',
       desc: '点击跳过',
       rules: [
         {
@@ -45,7 +45,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '开屏后摇一摇广告1',
+      name: '摇一摇广告1',
       desc: '点击跳过',
       rules: [
         {
@@ -141,7 +141,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '开屏后摇一摇广告2',
+      name: '摇一摇广告2',
       desc: '关闭(可能缓慢查询)',
       rules: [
         {
@@ -169,7 +169,7 @@ export default defineGkdApp({
     },
     {
       key: 12,
-      name: '开屏后摇一摇广告3',
+      name: '摇一摇广告3',
       desc: '关闭',
       rules: [
         {
@@ -178,6 +178,59 @@ export default defineGkdApp({
             'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
           matches:
             '@ViewGroup < ViewGroup -4 ViewGroup < ViewGroup - ImageView <<8 [id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"]',
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '开屏广告0',
+      desc: '跳过',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
+          matches: '@ViewGroup > [text="跳过"]',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '摇一摇广告4',
+      desc: '关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
+          matches:
+            '@ViewGroup < ViewGroup -5 ViewGroup < ViewGroup - ImageView <<4 ViewGroup -2 ViewGroup <<4 [id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"]',
+        },
+      ],
+    },
+    {
+      key: 15,
+      name: '摇一摇广告5',
+      desc: '关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
+          matches:
+            '@ViewGroup < ViewGroup - ImageView < ViewGroup - ImageView <<4 ViewGroup - ViewGroup <<4 [id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"]',
+        },
+      ],
+    },
+    {
+      key: 16,
+      name: '摇一摇广告6',
+      desc: '关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
+          matches: '@ImageView - TextView <<4 [id="android:id/content"]',
         },
       ],
     },

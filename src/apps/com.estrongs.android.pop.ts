@@ -101,7 +101,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '主页广告6',
-      desc: '关闭（节点不支持直接点击可能需要模拟点击权限）',
+      desc: '关闭(需要模拟点击)',
       rules: [
         {
           fastQuery: true,
@@ -114,13 +114,37 @@ export default defineGkdApp({
     {
       key: 7,
       name: '主页广告7',
-      desc: '关闭（节点不支持直接点击可能需要模拟点击权限）',
+      desc: '关闭(需要模拟点击)',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
           matches:
             'ImageView < @FrameLayout - FrameLayout <<5 [id="android:id/content"]',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '主页广告8',
+      desc: '关闭(需要模拟点击)',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches: '@FrameLayout - ImageView <<5 [id="android:id/content"]',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '主页广告9',
+      desc: '关闭(需要模拟点击)',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches: '@FrameLayout - FrameLayout <<4 [id="android:id/content"]',
         },
       ],
     },

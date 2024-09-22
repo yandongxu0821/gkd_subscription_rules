@@ -30,5 +30,17 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '内测更新提示',
+      desc: '关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '[id="com.kugou.android:id/hno"]',
+        },
+      ],
+    },
   ],
 });
