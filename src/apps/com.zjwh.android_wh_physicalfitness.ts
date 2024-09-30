@@ -234,6 +234,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 17,
+      name: '开屏广告',
+      desc: '跳过',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.activity.SplashActivity',
+          matches: '@ImageView + * > [text="跳过"]',
+        },
+      ],
+    },
   ],
 });
 

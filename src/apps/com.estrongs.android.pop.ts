@@ -148,6 +148,31 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 10,
+      name: '主页广告10',
+      desc: '关闭（需要模拟点击）',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches: '@FrameLayout - * <<4 [id="android:id/content"]',
+        },
+      ],
+    },
+    {
+      key: 11,
+      name: '首页插图广告',
+      desc: '关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches:
+            '[id="com.estrongs.android.pop:id/close_b_i_a_t_b_no_compliance"]',
+        },
+      ],
+    },
   ],
 });
 
