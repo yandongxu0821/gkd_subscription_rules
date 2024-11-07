@@ -30,27 +30,13 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '主页广告2（修改1）',
+      name: '主页广告2（修改）',
       key: 2,
       desc: '关闭',
       rules: [
         {
           matches: [
-            '@FrameLayout -2 FrameLayout < FrameLayout - FrameLayout <<3 [id="android:id/content"]',
-          ],
-          fastQuery: true,
-          activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
-        },
-      ],
-    },
-    {
-      name: '主页广告2（修改2）',
-      key: 21,
-      desc: '关闭',
-      rules: [
-        {
-          matches: [
-            '@FrameLayout -2 ImageView < FrameLayout - FrameLayout <<3 [id="android:id/content"]',
+            '@FrameLayout -2 * < FrameLayout - FrameLayout <<3 [id="android:id/content"]',
           ],
           fastQuery: true,
           activityIds: ['com.estrongs.android.pop.view.FileExplorerActivity'],
@@ -170,6 +156,31 @@ export default defineGkdApp({
           activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
           matches:
             '[id="com.estrongs.android.pop:id/close_b_i_a_t_b_no_compliance"]',
+        },
+      ],
+    },
+    {
+      key: 12,
+      name: '傻逼3s广告（beta）',
+      desc: '等待3s后点击关闭',
+      rules: [
+        {
+          matches: ['@* -3 * <<4 [id="android:id/content"]'],
+          actionDelay: 3500,
+          fastQuery: true,
+          activityIds: ['com.baidu.mobads.sdk.api.MobRewardVideoActivity'],
+        },
+      ],
+    },
+    {
+      key: 13,
+      name: '摇一摇广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
+          matches: '@FrameLayout -2 * <<2 * - * <<3 [id="android:id/content"]',
         },
       ],
     },

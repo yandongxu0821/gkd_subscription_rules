@@ -12,6 +12,7 @@ export default defineGkdApp({
         {
           activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
           matches: '[text="在微信中查看"]',
+          actionDelay: 500,
         },
       ],
     },
@@ -21,10 +22,11 @@ export default defineGkdApp({
       desc: '点击菜单->不感兴趣->内容太差',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
+      actionDelay: 1000, // 间隔一段时间防止误触
       rules: [
         {
           key: 1,
-          matches: 'Image[text="feedback"][visibleToUser=true]',
+          matches: 'Image[text*="feedback"][visibleToUser=true]',
         },
         {
           preKeys: [1],
