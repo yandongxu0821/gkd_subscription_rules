@@ -142,7 +142,9 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
-          matches: '@FrameLayout - * <<4 [id="android:id/content"]',
+          matches:
+            '@*[visibleToUser=true] < * - * <<4 [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/18003559',
         },
       ],
     },
@@ -181,6 +183,20 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
           matches: '@FrameLayout -2 * <<2 * - * <<3 [id="android:id/content"]',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '弹窗广告11',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.huawei.updatesdk.service.otaupdate.AppUpdateActivity',
+          matches: '[id="com.estrongs.android.pop:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/18003144',
         },
       ],
     },

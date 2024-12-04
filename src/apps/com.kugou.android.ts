@@ -42,5 +42,39 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '推荐页内嵌广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '[id="com.kugou.android:id/egj"]',
+          snapshotUrls: 'https://i.gkd.li/i/18003869',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '评论区内嵌广告',
+      desc: '点击菜单->不感兴趣',
+      activityIds: 'com.kugou.android.app.MediaActivity',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          matches: '[id="com.kugou.android:id/rmz"]',
+          snapshotUrls: 'https://i.gkd.li/i/18003889',
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          fastQuery: true,
+          matches: '[id="com.kugou.android:id/rmw"]',
+          snapshotUrls: 'https://i.gkd.li/i/18003891',
+        },
+      ],
+    },
   ],
 });
