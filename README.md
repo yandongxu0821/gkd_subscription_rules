@@ -30,9 +30,9 @@ https://raw.githubusercontent.com/yandongxu0821/gkd_subscription_rules/main/dist
 
 ---
 
-当前版本: v3
+当前版本: v8
 
-当前订阅文件已适配 19 个应用，共有 47 个应用规则组
+当前订阅文件共包含 22 个应用， 69 个应用规则组
 
 查看 [适配 APP 列表](./dist/README.md)
 
