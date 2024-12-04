@@ -22,7 +22,6 @@ export default defineGkdApp({
       desc: '点击菜单->不感兴趣->内容太差',
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebViewMMUI',
-      actionDelay: 1000, // 间隔一段时间防止误触
       rules: [
         {
           key: 1,
