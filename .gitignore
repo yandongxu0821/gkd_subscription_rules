@@ -21,3 +21,6 @@ lerna-debug.log*
 node_modules
 package-lock.json
 yarn.lock
+
+/src/apps/es_match_rules.txt
+package.json

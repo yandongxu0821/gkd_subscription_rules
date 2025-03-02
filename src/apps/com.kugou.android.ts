@@ -5,8 +5,8 @@ export default defineGkdApp({
   name: '酷狗音乐',
   groups: [
     {
-      name: '开屏广告',
       key: 0,
+      name: '开屏广告',
       desc: '点击跳过',
       rules: [
         {
@@ -73,6 +73,19 @@ export default defineGkdApp({
           fastQuery: true,
           matches: '[id="com.kugou.android:id/rmw"]',
           snapshotUrls: 'https://i.gkd.li/i/18003891',
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '播放页推广',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.kugou.android.app.MediaActivity',
+          matches: '[id="com.kugou.android:id/egj"]',
+          snapshotUrls: 'https://i.gkd.li/i/19041926',
         },
       ],
     },
