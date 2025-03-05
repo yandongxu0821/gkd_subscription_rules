@@ -23,7 +23,8 @@ export default defineGkdApp({
       rules: [
         {
           matches: [
-            'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > @FrameLayout > ImageView',
+            // 'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > @FrameLayout > ImageView',
+            'ImageView < @FrameLayout <<4 FrameLayout[id="android:id/content"]',
           ],
           activityIds: [
             'com.fighter.activities.ReaperTranslucentInteractionActivity',

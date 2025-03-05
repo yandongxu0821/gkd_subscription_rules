@@ -247,6 +247,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 18,
+      name: '飘窗广告',
+      desc: '关闭',
+      rules: [
+        {
+          activityIds:
+            'com.zjwh.android_wh_physicalfitness.activity.HomeActivity',
+          matches:
+            '@* < * - * <<4 ViewGroup - ViewGroup <<4 [id="com.zjwh.android_wh_physicalfitness:id/ksad_tk_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/19089660',
+        },
+      ],
+    },
   ],
 });
 

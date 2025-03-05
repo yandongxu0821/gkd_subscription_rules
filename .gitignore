@@ -23,4 +23,5 @@ package-lock.json
 yarn.lock
 
 /src/apps/es_match_rules.txt
+/src/apps/ydsjxy_match_rules.txt
 package.json
