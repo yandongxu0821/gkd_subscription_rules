@@ -6,7 +6,7 @@
 
 ## 注意
 
-- **本规则暂未适配全局规则，请订阅其他作者的规则以获取更多适配规则**
+- **本规则暂未适配全局规则，请订阅其他开发者以获取更多适配规则**
 
 > 推荐使用作者 [@AIsouler](https://github.com/AIsouler) 的订阅规则，参见[https://github.com/AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription)
 
@@ -30,11 +30,11 @@ https://raw.githubusercontent.com/yandongxu0821/gkd_subscription_rules/main/dist
 
 ---
 
-当前版本: v8
+当前版本: v9
 
-当前订阅文件共包含 22 个应用， 69 个应用规则组
+查看 [已适配应用列表](./dist/README.md)
 
-查看 [适配 APP 列表](./dist/README.md)
+查看 [上次提交记录](./dist/CHANGELOG.md)
 
 查看 [第三方订阅规则汇总](https://github.com/Adpro-Team/GKD_THS_List) By [@adproqwq](https://github.com/adproqwq)
 
