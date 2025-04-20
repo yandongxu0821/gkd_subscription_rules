@@ -30,6 +30,7 @@ https://raw.githubusercontent.com/yandongxu0821/gkd_subscription_rules/main/dist
 
 ---
 
+当前版本: v10
 当前版本: v9
 
 查看 [已适配应用列表](./dist/README.md)
